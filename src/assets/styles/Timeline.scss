@@ -1,0 +1,79 @@
+.vertical-timeline span {
+    color: white;
+    font-family: 'Courier Prime', monospace;
+}
+
+.vertical-timeline p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element p {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h3 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h4 {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element span {
+    color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element .vertical-timeline-element-date {
+    color: white;
+}
+
+.svg-inline--fa {
+    color: white;
+}
+
+/* Enable animations */
+.vertical-timeline--animate .vertical-timeline-element--work {
+    opacity: 0;
+}
+
+.vertical-timeline--animate .vertical-timeline-element--work.bounce-in {
+    animation: bounce-in 0.6s;
+    opacity: 1;
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element .vertical-timeline-element-date {
+        color: rgb(39, 40, 34);
+    }
+}
+
+/* Ensure timeline cards are visible in light mode (white cards on white page) */
+.light-mode .vertical-timeline-element-content {
+    background: #f6f7f8 !important;
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08) !important;
+    color: rgb(39,40,34) !important;
+    z-index: 3;
+}
+
+.light-mode .vertical-timeline::before {
+    background: rgba(0,0,0,0.12) !important;
+}
+
+.light-mode .vertical-timeline-element .vertical-timeline-element-date {
+    color: rgb(39, 40, 34) !important;
+}
